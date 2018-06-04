@@ -1,5 +1,5 @@
 import jenkins.model.*
 
-def jobPattern = env.jobPattern
+def jobPattern = System.getenv("jobPattern")
 
 println "Job Pattern read from Jenkins:"+jobPattern
